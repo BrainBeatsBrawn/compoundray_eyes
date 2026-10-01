@@ -22,6 +22,7 @@ setup_module_variables_for_maths (${MATHS_SOURCE_DIR} ${JSON_SOURCE_DIR})
 
 set(MY_MODULES
   ${SM_VEC_MODULES}
+  ${SM_VVEC_MODULES}
   ${SM_GEOMETRY_POLYHEDRA_MODULES}
 )
 list(REMOVE_DUPLICATES MY_MODULES)
@@ -40,3 +41,7 @@ target_link_libraries(cyl local_modules)
 # Spherical polyhedral eye
 add_executable(poly poly.cpp)
 target_link_libraries(poly local_modules)
+
+# Foveated eye
+add_executable(foveated foveated.cpp)
+target_link_libraries(foveated local_modules)
