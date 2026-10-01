@@ -1,0 +1,3 @@
+[submodule "extern/maths"]
+	path = extern/maths
+	url = https://github.com/sebsjames/maths
